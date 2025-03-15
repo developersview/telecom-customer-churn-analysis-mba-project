@@ -31,7 +31,7 @@ def main():
     st.sidebar.image(image)
 
     if add_selectbox == "Online":
-        st.info("Input data below")
+        st.info("Enter your data below")
         #Based on our optimal features selection
         st.subheader("Demographic data")
         seniorcitizen = st.selectbox('Senior Citizen:', ('Yes', 'No'))
@@ -115,7 +115,7 @@ def main():
                 st.write(prediction_df)
 
     st.markdown("<h3></h3>", unsafe_allow_html=True)
-    st.markdown("Project done by Pranoy Chakraborty")
+    st.info("Project done by Pranoy Chakraborty")
             
 if __name__ == '__main__':
         main()
